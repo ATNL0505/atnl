@@ -1022,3 +1022,49 @@ p {
         font-size: 0.8rem;
     }
 }
+/* Branding Ticker */
+.branding-ticker {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    white-space: nowrap;
+    height: 25px;
+}
+
+.ticker-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ticker-message {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffd700;
+    animation: brandingScroll 40s linear infinite;
+    letter-spacing: 0.5px;
+}
+
+@keyframes brandingScroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .branding-ticker {
+        margin-top: 0.8rem;
+        height: 25px;
+    }
+    
+    .ticker-message {
+        font-size: 16px;
+        animation: brandingScroll 30s linear infinite;
+    }
+}
