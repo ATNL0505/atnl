@@ -1012,3 +1012,13 @@ p {
     color: #fff;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+    .technology-partner {
+        margin-top: 0.8rem;
+        padding-top: 0.8rem;
+    }
+    
+    .partner-text {
+        font-size: 0.8rem;
+    }
+}
